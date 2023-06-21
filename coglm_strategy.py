@@ -58,7 +58,7 @@ class CoglmStrategy:
         self._is_done = False
         self.outlier_count_down = torch.zeros(16) 
         self.vis_list = [[]for i in range(16)]
-        self.cluster_labels = torch.tensor(np.load('cluster_label2.npy'), device='cuda', dtype=torch.long)
+        self.cluster_labels = torch.tensor(np.load('CogVideo/cluster_label2.npy'), device='cuda', dtype=torch.long)
         self.start_pos = -1
         self.white_cluster = []
         # self.fout = open('tmp.txt', 'w')

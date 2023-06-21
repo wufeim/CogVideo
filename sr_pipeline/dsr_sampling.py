@@ -28,7 +28,7 @@ class IterativeEntfilterStrategy:
         self.invalid_slices = invalid_slices
         self.temperature = temperature
         self.topk = topk        
-        self.cluster_labels = torch.tensor(np.load('cluster_label2.npy'), device='cuda', dtype=torch.long)
+        self.cluster_labels = torch.tensor(np.load('CogVideo/cluster_label2.npy'), device='cuda', dtype=torch.long)
 
 
     def forward(self, logits_, tokens, temperature=None, entfilter=None, filter_topk=5, temperature2=None):
